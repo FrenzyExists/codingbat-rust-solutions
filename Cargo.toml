@@ -1,5 +1,30 @@
+# TOML Stands for:
+# Tom's Obvious Minimal Language
+# A manifest is a description of a package or a workspace in a file
+# named Cargo.toml
+# A crate is either a library or an executable program
+# A package is a collection of source files and a Cargo.toml 
+# manifest file which describes the package. A package has a name 
+# and version which is used for specifying dependencies between 
+# packages.
+# A target is the folder generated where it subdivides into 
+# different targets whose inside contain artifacts aka files 
+# generated from compillation
+# For example, cargo target correspond to the cargo packages 
+# which consist of targets which correspond to artifacts that are 
+# produced. Those packages can have a binary, a library, a test, an 
+# example, or benchmark.
+# An artifact is a file or set of files created after the 
+# compilation process
+# Registry is a service that contains a collection of downloadable
+# crates, kinda like the AUR for arch-based system on Linux
+# A source is a provider that contains crates that may be included
+# as dependencies for a package. For example, the registery is a 
+# source
+
 [package]
 name = "codingbat"
+authors = ["Detective Pikachu frenzyexists@gmail.com"]
 version = "0.1.0"
 edition = "2018"
 
