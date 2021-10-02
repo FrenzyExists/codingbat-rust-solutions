@@ -11,6 +11,19 @@
  * everyNth("abcdefg", 3) → "adg"
  */
 
-pub fn every_nth(s: &str, n: i32) -> &str {
-    return "boi";
+pub fn every_nth(s: &str, n: usize) -> String {
+    let mut new_string: String = "".to_string().to_owned();
+    let length:usize = s.len();
+    for (i, j) in s.chars().enumerate() {
+        if length%2 == 0 {
+            if i%n < n-1 {
+                new_string.push(j);
+            }
+        } else {
+            if i%n < n-2 {
+                new_string.push(j);
+            }
+        }
+    }
+    return new_string;
 }
