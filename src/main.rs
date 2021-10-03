@@ -12,14 +12,33 @@
 
 mod warmup_1_build;
 use crate::warmup_1_build::every_nth::every_nth;
+use crate::warmup_1_build::diff_21::diff_21;
+use crate::warmup_1_build::makes_10::makes_10;
 use rand::Rng;
-
 
 fn main() {
     println!("Hello, world!");
-    println!("{}", every_nth("abcdefg", 3));
     random_vec(4, [0, 10].to_vec());
+    
+    // Test 1
+    warmup_1();
 }
+
+// warmup 1
+fn warmup_1() {
+    // Diff 21
+    println!("Testing Diff 21...");
+    println!("diff_21(19) -> {}", diff_21(19));
+    println!("diff_21(10) -> {}", diff_21(10)); 
+    println!("diff_21(21) -> {}", diff_21(21)); 
+    
+    println!("\nTesting every_nth..."); 
+    println!("every_nth(\"Miracle\" 2) -> {}", every_nth("Miracle", 2));
+    println!("every_nth(\"abcdefg\", 2) -> {}", every_nth("abcdefg", 3))
+
+}
+
+
 
 // Generates a list of fixed or random size containing a 
 // range or random numbers
@@ -35,3 +54,5 @@ fn random_vec(size: i32, num: Vec<i32>) -> Vec<i32> {
     }
     return vecky;
 }
+
+

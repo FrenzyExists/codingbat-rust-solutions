@@ -9,7 +9,7 @@
  * makes_10(1, 9) → true
  */
 
-fn makes_10(a: i32, b: i32) -> bool {
+pub fn makes_10(a: i32, b: i32) -> bool {
     return (a == 10) || (b == 10) || (a+b == 10);
 }
 
