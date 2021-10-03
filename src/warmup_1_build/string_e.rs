@@ -10,5 +10,11 @@
  */
 
 pub fn string_e(e: &str) -> bool {
-    return false;
+    if e.len() == 0 {return false;}
+    if e.len() == 1 && e != "e" {return false;}
+    let mut counter: i32 = 0;
+    for i in e.split("") {
+        if i == "e" {counter +=1;}
+    }
+    return counter >=1 && counter <=3;
 }

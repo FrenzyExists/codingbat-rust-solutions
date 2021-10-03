@@ -10,7 +10,7 @@
  * posNeg(-4, -5, true) → true
  */
 
-fn pos_neg(a: i32, b: i32, negative: bool) -> bool {
+pub fn pos_neg(a: i32, b: i32, negative: bool) -> bool {
     if negative {
         return a < 0 && b < 0;
     }

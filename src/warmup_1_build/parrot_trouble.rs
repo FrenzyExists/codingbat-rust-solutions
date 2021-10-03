@@ -11,6 +11,6 @@
  *
  */
 
-fn parrot_trouble(talking: bool, hour: i32) -> bool {
+pub fn parrot_trouble(talking: bool, hour: i32) -> bool {
     return (hour < 7 || hour > 20) && talking;
 }

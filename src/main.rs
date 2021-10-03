@@ -14,6 +14,11 @@ mod warmup_1_build;
 use crate::warmup_1_build::every_nth::every_nth;
 use crate::warmup_1_build::diff_21::diff_21;
 use crate::warmup_1_build::makes_10::makes_10;
+use crate::warmup_1_build::sum_double::sum_double;
+use crate::warmup_1_build::string_e::string_e;
+use crate::warmup_1_build::sleep_in::sleep_in;
+use crate::warmup_1_build::pos_neg::pos_neg;
+use crate::warmup_1_build::parrot_trouble::parrot_trouble;
 use rand::Rng;
 
 fn main() {
@@ -34,7 +39,38 @@ fn warmup_1() {
     
     println!("\nTesting every_nth..."); 
     println!("every_nth(\"Miracle\" 2) -> {}", every_nth("Miracle", 2));
-    println!("every_nth(\"abcdefg\", 2) -> {}", every_nth("abcdefg", 3))
+    println!("every_nth(\"abcdefg\", 2) -> {}", every_nth("abcdefg", 3));
+
+    // sum_double
+    println!("\nTesting sum_double...");
+    println!("sum_double(1, 2) -> {} ", sum_double(1, 2));
+    println!("sum_double(3, 2) -> {} ", sum_double(3, 2));
+    println!("sum_double(2, 2) -> {} ", sum_double(2, 2));
+
+    // string_e
+    println!("\nTesting string_e...");
+    println!("string_e(\"Hello\") -> {} ", string_e("Hello"));
+    println!("string_e(\"Heelle\") -> {} ", string_e("Heelle"));
+    println!("string_e(\"Heelele\") -> {} ", string_e("Heelele"));
+
+    // sleep_in
+    println!("\nTesting sleep_in...");
+    println!("sleep_in(weekday = false, vacation = false) -> {}", sleep_in(false, false));
+    println!("sleep_in(weekday = true, vacation = false) -> {}", sleep_in(true, false));
+    println!("sleep_in(weekday = false, vacation = true) -> {}", sleep_in(false, true));
+    println!("sleep_in(weekday = true, vacation = true) -> {}", sleep_in(true, true));
+
+    // pos_neg
+    println!("\nTesting pos_neg...");
+    println!("pos_neg(a = 1, b = -1, negative = false) -> {}", pos_neg(1, -1, false));
+    println!("pos_neg(a = -1, b = 1, negative = false) -> {}", pos_neg(-1, 1, false));
+    println!("pos_neg(a = -4, b = -5, negative = true) -> {}", pos_neg(-4, -5, true));
+
+    // parrot_trouble
+    println!("\nTesting parrot_trouble...");
+    println!("parrot_trouble(talking = true, hour = 6) -> {}", parrot_trouble(true, 6));
+    println!("parrot_trouble(talking = true, hour = 7) -> {}", parrot_trouble(true, 7));
+    println!("parrot_trouble(talking = false, hour = 6) -> {}", parrot_trouble(false, 6));
 
 }
 
