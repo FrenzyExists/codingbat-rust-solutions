@@ -1,4 +1,4 @@
-The codingbat solutions but in rust because fuck you that's why
+![](assets/banner-boi.png)
 
 I made this because i needed an excuse to practice rust. I don't like reading. I prefer to bash my head against the keyboard, less theory, more dirt.
 
