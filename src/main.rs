@@ -19,6 +19,7 @@ use crate::warmup_1_build::string_e::string_e;
 use crate::warmup_1_build::sleep_in::sleep_in;
 use crate::warmup_1_build::pos_neg::pos_neg;
 use crate::warmup_1_build::parrot_trouble::parrot_trouble;
+use crate::warmup_1_build::not_string::not_string;
 use rand::Rng;
 
 fn main() {
@@ -71,6 +72,10 @@ fn warmup_1() {
     println!("parrot_trouble(talking = true, hour = 6) -> {}", parrot_trouble(true, 6));
     println!("parrot_trouble(talking = true, hour = 7) -> {}", parrot_trouble(true, 7));
     println!("parrot_trouble(talking = false, hour = 6) -> {}", parrot_trouble(false, 6));
+
+    // not_string
+    println!("\nTesting not_string...");
+    println!("not_string(\"candy\") -> {}", not_string("candy"));
 
 }
 

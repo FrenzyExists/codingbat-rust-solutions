@@ -9,15 +9,15 @@
  * notString("candy") → "not candy"
  */
 
-/*
-fn not_string(string: &str) -> &str {
+
+pub fn not_string(string: &str) -> String {
     for s in string.split_whitespace() {
         if s == "not" {
-            return string;
+            return string.to_string();
         }
     }
     let mut new_string: String = "not ".to_owned();
     new_string.push_str(&string);
     return new_string;
 }
-*/
+
