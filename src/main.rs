@@ -107,9 +107,9 @@ fn warmup_1() {
 
     // missing_char
     println!("\nTesting missing_char...");
-    println!(" {}", missing_char("kitten", 1));
-    println!(" {}", missing_char("kitten", 0));
-    println!(" {}", missing_char("kitten", 4));
+    println!("missing_char(\"kitten\", 1) {}", missing_char("kitten", 1));
+    println!("missing_char(\"kitten\", 0) {}", missing_char("kitten", 0));
+    println!("missing_char(\"kitten\", 4) {}", missing_char("kitten", 4));
 
     // last_digit
     println!("\nTesting last_digit...");
@@ -131,9 +131,9 @@ fn warmup_1() {
 
     // every_up
     println!("\nTesting last_digit...");
-    println!("every_up() -> {}", end_up("Hello"));
-    println!("every_up() -> {}", end_up("hi there"));
-    println!("every_up() -> {}", end_up("hi"));
+    println!("every_up(\"Hello\") -> {}", end_up("Hello"));
+    println!("every_up(\"hi there\") -> {}", end_up("hi there"));
+    println!("every_up(\"hi\") -> {}", end_up("hi"));
 
     // front_back
     println!("\nTesting front_back...");
