@@ -11,7 +11,7 @@
  * monkeyTrouble(true, false) → false
  */
 
-fn monkey_trouble(a_smile: bool, b_smile: bool) -> bool {
+pub fn monkey_trouble(a_smile: bool, b_smile: bool) -> bool {
     // TL;DR This is an inverted XOR gate, sort of
     return !( (a_smile && !b_smile) || (!a_smile && b_smile) );
 }

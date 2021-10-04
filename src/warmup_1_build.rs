@@ -26,3 +26,5 @@ pub mod monkey_trouble;
 pub mod not_string;
 pub mod pos_neg;
 pub mod string_e;
+pub mod front_back;
+pub mod max_1020;

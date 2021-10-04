@@ -20,6 +20,16 @@ use crate::warmup_1_build::sleep_in::sleep_in;
 use crate::warmup_1_build::pos_neg::pos_neg;
 use crate::warmup_1_build::parrot_trouble::parrot_trouble;
 use crate::warmup_1_build::not_string::not_string;
+use crate::warmup_1_build::near_hundred::near_hundred;
+use crate::warmup_1_build::monkey_trouble::monkey_trouble;
+use crate::warmup_1_build::front_22::front_22;
+use crate::warmup_1_build::front_3::front_3;
+use crate::warmup_1_build::last_digit::last_digit;
+use crate::warmup_1_build::front_back::front_back;
+use crate::warmup_1_build::max_1020::max_1020;
+use crate::warmup_1_build::missing_char::missing_char;
+use crate::warmup_1_build::end_up::end_up;
+
 use rand::Rng;
 
 fn main() {
@@ -76,6 +86,67 @@ fn warmup_1() {
     // not_string
     println!("\nTesting not_string...");
     println!("not_string(\"candy\") -> {}", not_string("candy"));
+
+    // makes_10
+    println!("\n Testing makes_10...");
+    println!("makes_10(a = 9, b = 10) -> {}", makes_10(9, 10));
+    println!("makes_10(n = 9, b = 9) -> {}", makes_10(9, 9));
+    println!("makes_10(n = 1, b = 9) -> {}", makes_10(1, 9));
+
+    // near_100
+    println!("\nTesting near_100...");
+    println!("near_100(93) -> {}", near_hundred(93));
+    println!("near_100(90) -> {}", near_hundred(90));
+    println!("near_100(89) -> {}", near_hundred(89));
+
+    // monkey_trouble
+    println!("\nTesting monkey_trouble...");
+    println!("monkey_trouble(a_smile = true, b_smile = true) -> {}", monkey_trouble(true, true));
+    println!("monkey_trouble(a_smile = false, b_smile = false) -> {}", monkey_trouble(false, false));
+    println!("monkey_trouble(a_smile = true, b_smile = false) -> {}", monkey_trouble(true, false));
+
+    // missing_char
+    println!("\nTesting missing_char...");
+    println!(" {}", missing_char("kitten", 1));
+    println!(" {}", missing_char("kitten", 0));
+    println!(" {}", missing_char("kitten", 4));
+
+    // last_digit
+    println!("\nTesting last_digit...");
+    println!("last_digit() {}", last_digit(7, 17));
+    println!("last_digit() {}", last_digit(6, 17));
+    println!("last_digit() {}", last_digit(3, 113));
+    
+    // front_3
+    println!("\nTesting front_3...");
+    println!("front_3(string = \"Java\") -> {}", front_3("Java"));
+    println!("front_3(string = \"Chocolate\") -> {}", front_3("Chocolate"));
+    println!("front_3(string = \"abc\") -> {}", front_3("abc"));
+
+    // front_22
+    println!("\nTesting front_22...");
+    println!("front_22( = \"code\") -> {}", front_22("code"));
+    println!("front_22( = \"a\") -> {}", front_22("a"));
+    println!("front_22( = \"ab\") -> {}", front_22("ab"));
+
+    // every_up
+    println!("\nTesting last_digit...");
+    println!("every_up() -> {}", end_up("Hello"));
+    println!("every_up() -> {}", end_up("hi there"));
+    println!("every_up() -> {}", end_up("hi"));
+
+    // front_back
+    println!("\nTesting front_back...");
+    println!("front_back(string = \"code\") -> {}", front_back("code"));
+    println!("front_back(string = \"a\") -> {}", front_back("a"));
+    println!("front_back(string = \"ab\") -> {}", front_back("ab"));
+
+
+    // max_1020
+    println!("\nTesting max_1020...");
+    println!("max_1020(a = 11, b = 19) -> {}", max_1020(11, 19));
+    println!("max_1020(a = 19, b = 11) -> {}", max_1020(19, 11));
+    println!("max_1020(a = 11, b = 9) -> {}", max_1020(11, 19));
 
 }
 
