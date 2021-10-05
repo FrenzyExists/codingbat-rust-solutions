@@ -146,7 +146,7 @@ fn warmup_1() {
     println!("\nTesting max_1020...");
     println!("max_1020(a = 11, b = 19) -> {}", max_1020(11, 19));
     println!("max_1020(a = 19, b = 11) -> {}", max_1020(19, 11));
-    println!("max_1020(a = 11, b = 9) -> {}", max_1020(11, 19));
+    println!("max_1020(a = 11, b = 9) -> {}", max_1020(11, 9));
 
 }
 

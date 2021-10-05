@@ -13,7 +13,7 @@ use std::cmp::max;
 
 pub fn max_1020(a: i32, b: i32) -> i32 {
     let range = 10..20; 
-    if range.contains(&a) && range.contains(&b) {
+    if range.contains(&a) || range.contains(&b) {
         return max(a, b);
     }
     return 0;

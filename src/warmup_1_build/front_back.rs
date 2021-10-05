@@ -12,5 +12,5 @@
  */
 
 pub fn front_back(string: &str) -> String {
-    return "".to_string();
+    return string.chars().rev().collect::<String>();
 }

@@ -8,5 +8,16 @@ endUp("hi") → "HI"
 */
 
 pub fn end_up(string: &str) -> String {
-    return "".to_string();
+    let mut new_string: String = "".to_string();
+    let mut white_counter = String::from(string).chars().filter(|c| !c.is_whitespace()).count();
+    for j in string.split_whitespace() {
+        new_string.push_str(&j.chars().take(2).collect::<String>());
+        new_string.push_str(&j.chars().skip(2).collect::<String>().to_uppercase());
+        if white_counter > 0 {
+        new_string.push(' ');
+        white_counter -= 1;
+        }
+    }
+
+    return new_string;
 }
