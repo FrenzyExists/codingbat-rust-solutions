@@ -44,25 +44,25 @@ fn main() {
 fn warmup_1() {
     // Diff 21
     println!("Testing Diff 21...");
-    println!("diff_21(19) -> {}", diff_21(19));
-    println!("diff_21(10) -> {}", diff_21(10)); 
-    println!("diff_21(21) -> {}", diff_21(21)); 
+    println!("diff_21(num = 19) -> {}", diff_21(19));
+    println!("diff_21(num = 10) -> {}", diff_21(10)); 
+    println!("diff_21(num = 21) -> {}", diff_21(21)); 
     
     println!("\nTesting every_nth..."); 
-    println!("every_nth(\"Miracle\" 2) -> {}", every_nth("Miracle", 2));
-    println!("every_nth(\"abcdefg\", 2) -> {}", every_nth("abcdefg", 3));
+    println!("every_nth(string = \"Miracle\" 2) -> {}", every_nth("Miracle", 2));
+    println!("every_nth(string = \"abcdefg\", 3) -> {}", every_nth("abcdefg", 3));
 
     // sum_double
     println!("\nTesting sum_double...");
-    println!("sum_double(1, 2) -> {} ", sum_double(1, 2));
-    println!("sum_double(3, 2) -> {} ", sum_double(3, 2));
-    println!("sum_double(2, 2) -> {} ", sum_double(2, 2));
+    println!("sum_double(a = 1, b = 2) -> {} ", sum_double(1, 2));
+    println!("sum_double(a = 3, b = 2) -> {} ", sum_double(3, 2));
+    println!("sum_double(a = 2, b= 2) -> {} ", sum_double(2, 2));
 
     // string_e
     println!("\nTesting string_e...");
-    println!("string_e(\"Hello\") -> {} ", string_e("Hello"));
-    println!("string_e(\"Heelle\") -> {} ", string_e("Heelle"));
-    println!("string_e(\"Heelele\") -> {} ", string_e("Heelele"));
+    println!("string_e(string = \"Hello\") -> {} ", string_e("Hello"));
+    println!("string_e(string = \"Heelle\") -> {} ", string_e("Heelle"));
+    println!("string_e(string = \"Heelele\") -> {} ", string_e("Heelele"));
 
     // sleep_in
     println!("\nTesting sleep_in...");
@@ -85,7 +85,7 @@ fn warmup_1() {
 
     // not_string
     println!("\nTesting not_string...");
-    println!("not_string(\"candy\") -> {}", not_string("candy"));
+    println!("not_string(string = \"candy\") -> {}", not_string("candy"));
 
     // makes_10
     println!("\n Testing makes_10...");
@@ -95,9 +95,9 @@ fn warmup_1() {
 
     // near_100
     println!("\nTesting near_100...");
-    println!("near_100(93) -> {}", near_hundred(93));
-    println!("near_100(90) -> {}", near_hundred(90));
-    println!("near_100(89) -> {}", near_hundred(89));
+    println!("near_100(num = 93) -> {}", near_hundred(93));
+    println!("near_100(num = 90) -> {}", near_hundred(90));
+    println!("near_100(num = 89) -> {}", near_hundred(89));
 
     // monkey_trouble
     println!("\nTesting monkey_trouble...");
@@ -107,15 +107,15 @@ fn warmup_1() {
 
     // missing_char
     println!("\nTesting missing_char...");
-    println!("missing_char(\"kitten\", 1) {}", missing_char("kitten", 1));
-    println!("missing_char(\"kitten\", 0) {}", missing_char("kitten", 0));
-    println!("missing_char(\"kitten\", 4) {}", missing_char("kitten", 4));
+    println!("missing_char(string = \"kitten\", at = 1) {}", missing_char("kitten", 1));
+    println!("missing_char(string = \"kitten\", at = 0) {}", missing_char("kitten", 0));
+    println!("missing_char(string = \"kitten\", at = 4) {}", missing_char("kitten", 4));
 
     // last_digit
     println!("\nTesting last_digit...");
-    println!("last_digit() {}", last_digit(7, 17));
-    println!("last_digit() {}", last_digit(6, 17));
-    println!("last_digit() {}", last_digit(3, 113));
+    println!("last_digit(a = 7, b = 17) {}", last_digit(7, 17));
+    println!("last_digit(a = 7, b = 17) {}", last_digit(6, 17));
+    println!("last_digit(a = 3, b = 113) {}", last_digit(3, 113));
     
     // front_3
     println!("\nTesting front_3...");
@@ -125,15 +125,15 @@ fn warmup_1() {
 
     // front_22
     println!("\nTesting front_22...");
-    println!("front_22( = \"code\") -> {}", front_22("code"));
-    println!("front_22( = \"a\") -> {}", front_22("a"));
-    println!("front_22( = \"ab\") -> {}", front_22("ab"));
+    println!("front_22(string = \"code\") -> {}", front_22("code"));
+    println!("front_22( string = \"a\") -> {}", front_22("a"));
+    println!("front_22(strng = \"ab\") -> {}", front_22("ab"));
 
     // every_up
-    println!("\nTesting last_digit...");
-    println!("every_up(\"Hello\") -> {}", end_up("Hello"));
-    println!("every_up(\"hi there\") -> {}", end_up("hi there"));
-    println!("every_up(\"hi\") -> {}", end_up("hi"));
+    println!("\nTesting end_up...");
+    println!("end_up(string = \"Hello\") -> {}", end_up("Hello"));
+    println!("end_up(string = \"hi there\") -> {}", end_up("hi there"));
+    println!("end_up(string = \"hi\") -> {}", end_up("hi"));
 
     // front_back
     println!("\nTesting front_back...");

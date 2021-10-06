@@ -8,14 +8,9 @@
  * front3("Chocolate") → "ChoChoCho"
  * front3("abc") → "abcabcabc"
  */
-
-
 pub fn front_3(string: &str) -> String {
-    let mut new_string: String;
-    if string.len() >=3 {
-        
-
-    }
-    return "".to_string() ;
-
+    let mut new_string: String = "".to_string();
+    let boi = &string.chars().take(3).collect::<String>();
+    for _i in 0..3 { new_string.push_str(boi); }
+    return new_string;
 }

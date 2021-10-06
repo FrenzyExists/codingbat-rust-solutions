@@ -12,6 +12,9 @@
  * missing_char("kitten", 0) → "itten"
  * missing_char("kitten", 4) → "kittn
  */
-pub fn missing_char(string: &str, n: i32) -> String {
-    return "".to_string();
+
+pub fn missing_char(string: &str, n: usize) -> String {
+    let mut new_string: String = String::from(string);
+    new_string.remove(n);
+    return new_string;
 }

@@ -14,15 +14,15 @@
 pub fn every_nth(s: &str, n: usize) -> String {
     let mut new_string: String = "".to_string().to_owned();
     let length:usize = s.len();
+    let mut _b = 0;
+    if n%2 == 0 {
+        _b = n - 1;
+    } else {
+        _b = n - 2;
+    }
     for (i, j) in s.chars().enumerate() {
-        if length%2 == 0 {
-            if i%n < n-1 {
-                new_string.push(j);
-            }
-        } else {
-            if i%n < n-2 {
-                new_string.push(j);
-            }
+        if i%n < _b {
+            new_string.push(j);
         }
     }
     return new_string;
