@@ -148,9 +148,16 @@ fn warmup_1() {
     println!("max_1020(a = 19, b = 11) -> {}", max_1020(19, 11));
     println!("max_1020(a = 11, b = 9) -> {}", max_1020(11, 9));
 
+    // icy_hot
+    println!("\nTestng icy_hot...");
+    println!("icyHot(120, -1)");
+    println!("icyHot(-1, 120");
+    println!("icyHot(2, 120)");
+
+    // del_del
+    println!("\nTestng del_del...");
+
 }
-
-
 
 // Generates a list of fixed or random size containing a 
 // range or random numbers

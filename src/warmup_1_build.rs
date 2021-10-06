@@ -28,3 +28,6 @@ pub mod pos_neg;
 pub mod sleep_in;
 pub mod string_e;
 pub mod sum_double;
+pub mod del_del;
+pub mod or_35;
+pub mod in_3050;
