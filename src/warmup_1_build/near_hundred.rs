@@ -9,6 +9,6 @@
  * nearHundred(89) → false
  */
 
-fn near_hundred(n: i32) -> bool {
+pub fn near_hundred(n: i32) -> bool {
     return ( (100 - n).abs() < 10 ) || ( (200 - n).abs() < 10 );
 }

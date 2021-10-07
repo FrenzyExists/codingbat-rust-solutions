@@ -8,6 +8,6 @@
  * sumDouble(2, 2) → 8
  */
 
-fn sum_double(a: i32, b: i32) -> i32 {
+pub fn sum_double(a: i32, b: i32) -> i32 {
     return if a == b { (a + b) * 2 } else { a + b };
 }

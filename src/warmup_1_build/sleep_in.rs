@@ -6,18 +6,7 @@
  * sleep in.
  */
 
-fn sleep_in(weekday: bool, vacation: bool) -> bool {
+pub fn sleep_in(weekday: bool, vacation: bool) -> bool {
    return !weekday || vacation;
 }
 
-// Some quick dirty test
-fn main() {
-    println!("weekday = false, vacation = false");
-    println!("{}", sleep_in(false, false));
-    println!("weekday = true, vacation = false");
-    println!("{}", sleep_in(true, false));
-    println!("weekday = false, vacation = true");
-    println!("{}", sleep_in(false, true));
-    println!("weekday = true, vacation = true");
-    println!("{}", sleep_in(true, true));
-}
