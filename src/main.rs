@@ -30,6 +30,10 @@ use crate::warmup_1_build::max_1020::max_1020;
 use crate::warmup_1_build::missing_char::missing_char;
 use crate::warmup_1_build::end_up::end_up;
 
+mod warmup_2_build;
+use crate::warmup_2_build::alt_pairs::alt_pairs;
+
+
 use rand::Rng;
 
 fn main() {
@@ -157,6 +161,10 @@ fn warmup_1() {
     // del_del
     println!("\nTestng del_del...");
 
+    //***************
+    // WARMUP No. 2 *
+    //***************
+    println!("kitten -> {}", alt_pairs("kitten"));
 }
 
 // Generates a list of fixed or random size containing a 
