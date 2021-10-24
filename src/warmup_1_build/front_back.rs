@@ -10,7 +10,6 @@
  * frontBack("ab") → "ba"
  *
  */
-
 pub fn front_back(string: &str) -> String {
     return string.chars().rev().collect::<String>();
 }

@@ -32,7 +32,26 @@ use crate::warmup_1_build::end_up::end_up;
 
 mod warmup_2_build;
 use crate::warmup_2_build::alt_pairs::alt_pairs;
+use crate::warmup_2_build::array_667::array_667;
 
+/*
+ *
+ * use crate::warmup_2_build::double_x::double_x;
+ * use crate::warmup_2_build::array_123::array_123;
+use crate::warmup_2_build::last_2::last_2;
+use crate::warmup_2_build::array_count_9::array_count_9;
+use crate::warmup_2_build::string_x::string_x;
+use crate::warmup_2_build::string_yak::sting_yak;
+use crate::warmup_2_build::string_times::string_times;
+use crate::warmup_2_build::string_splosion::string_splosion;
+use crate::warmup_2_build::string_match::string_match;
+use crate::warmup_2_build::string_bits::string_bits;
+use crate::warmup_2_build::no_triples::no_triples;
+use crate::warmup_2_build::count_xx::count_xx;
+use crate::warmup_2_build::double_x::double_x;
+use crate::warmup_2_build::front_times::front_times;
+use crate::warmup_2_build::has_271::has_271;
+*/
 
 use rand::Rng;
 
@@ -159,12 +178,31 @@ fn warmup_1() {
     println!("icyHot(2, 120)");
 
     // del_del
-    println!("\nTestng del_del...");
 
     //***************
     // WARMUP No. 2 *
     //***************
-    println!("kitten -> {}", alt_pairs("kitten"));
+    
+    // alt_pairs
+    println!("\nTestng alt_pairs...");
+    println!("alt_pairs(string = \"kitten\") -> {}", alt_pairs("kitte"));
+    println!("alt_pairs(string = \"Chocolate\") -> {}", alt_pairs("Chocolate"));
+    println!("alt_pairs(string = \"CodingHorror\") -> {}", alt_pairs("CodingHorror"));
+
+    // array_667
+    println!("\nTestng array_667...");
+    println!("arrays_667(nums = [6, 6, 2]) -> {}", array_667(&mut [6,6,2]));
+    println!("arrays_667(nums = [6, 6, 2, 6]) -> {}", array_667(&mut[6,6,2,6]));
+    println!("arrays_667(nums = [6, 7, 2, 6]) -> {}", array_667(&mut [6,7,2,6]));
+
+    // array_123
+    //println!("arrays_123(nums = [6, 6, 2]) -> {}", array_123(&mut [6,6,2]));
+
+    // double_x
+    //println!("double_x(string = \"axxbb\") -> {}", double_x("axxbb"));
+   // println!("double_x(string = \"axaxax\") -> {}", double_x("axaxax"));
+    //println!("double_x(string = \"xxxxx\") -> {}", double_x("xxxxx"));
+    // has_271
 }
 
 // Generates a list of fixed or random size containing a 

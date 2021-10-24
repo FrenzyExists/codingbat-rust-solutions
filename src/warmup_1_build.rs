@@ -1,15 +1,20 @@
-// Build thingy from the warmup-1
-//
-// The functions from warmup-1, referenced in main.rs
-// are defined within their respective files (as we 
-// see at in the next file). For each such file we add
-// a mod <file> expression.
-//
-// What does pub do? Pub does make the module visible
-// to whoever uses this module (which is our crate,
-// main.rs). If mod <file> is not preceeded by pub
-// it is only visible within the module.
-// Btw, you can also make a file called mod.rs and add all the modules there and call it a day
+/*
+ * Build thingy from the warmup-1
+ *
+ * The functions from warmup-1, referenced in main.rs
+ * are defined within their respective files (as we
+ * see at in the next file). For each such file we add
+ * a mod <file> expression.
+ *
+ * What does pub do? Pub does make the module visible
+ * to whoever uses this module (which is our crate,
+ * main.rs). If mod <file> is not preceeded by pub
+ * it is only visible within the module.
+ *
+ * Btw, you can also make a file called mod.rs and 
+ * add all the modules there and call it a day
+ *
+ */
 pub mod diff_21;
 pub mod end_up;
 pub mod every_nth;

@@ -13,7 +13,6 @@
 
 pub fn every_nth(s: &str, n: usize) -> String {
     let mut new_string: String = "".to_string().to_owned();
-    let length:usize = s.len();
     let mut _b = 0;
     if n%2 == 0 {
         _b = n - 1;
