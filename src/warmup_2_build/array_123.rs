@@ -9,6 +9,37 @@
  *
  */
 
-pub fn array_123(nums: &mut [i32]) -> String{
-    return "".to_string();
+// Smart way
+pub fn array_123(nums: &mut [i32]) -> bool {
+    if nums.is_empty() {
+        return nums.is_empty();
+    }
+    for i in 0..nums.len()-2 {
+        if nums[i..i+3].eq(&[1, 2, 3]) {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Dumb way
+pub fn array_123_2(nums: &mut [i32]) -> bool {
+    if nums.is_empty() {
+        return nums.is_empty();
+    }
+    let mut iter = nums.iter().peekable();
+    let mut pointer = iter.next().unwrap();
+    let mut counter = 0;
+    while iter.peek().ne(&None) {
+        if (*iter.peek().unwrap() - *pointer).abs() == 1 {
+            counter += 1;
+        } else {
+            counter = 0;
+        }
+        if counter == 2 {
+            return true;
+        }
+        pointer = iter.next().unwrap();
+    }
+    return false;
 }

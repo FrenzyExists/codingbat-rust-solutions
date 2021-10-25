@@ -210,11 +210,10 @@ fn warmup_1() {
     println!("string_x(string = \"xabxxxcdx\") -> {}", string_x("xabxxxcdx")); 
 
 
-    // double_x
-    //println!("double_x(string = \"axxbb\") -> {}", double_x("axxbb"));
-   // println!("double_x(string = \"axaxax\") -> {}", double_x("axaxax"));
-    //println!("double_x(string = \"xxxxx\") -> {}", double_x("xxxxx"));
-    // has_271
+    // array_123
+    println!("array_123(string = [1, 1, 2, 3, 1]) -> {}",  array_123(&mut [1, 1, 2, 3, 1]));
+    println!("array_123(string = [1, 1, 2, 4, 1]) -> {}", array_123(&mut [1, 1, 2, 4, 1]));
+    println!("array_123(string = [1, 1, 2, 1, 2, 3]) -> {}",  array_123(&mut [1, 1, 2, 1, 2, 3]));
 }
 
 // Generates a list of fixed or random size containing a 
