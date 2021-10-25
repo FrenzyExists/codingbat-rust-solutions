@@ -7,3 +7,7 @@
  * icyHot(2, 120) → false
  *
  */
+pub fn del_del() {
+
+
+}
