@@ -1,12 +1,14 @@
 /*
- * Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+ * Given an array of ints, return true if 
+ * the sequence of numbers 1, 2, 3 appears 
+ * in the array somewhere.
+ *
+ * array123([1, 1, 2, 3, 1]) → true
+ * array123([1, 1, 2, 4, 1]) → false
+ * array123([1, 1, 2, 1, 2, 3]) → true
+ *
+ */
 
-array123([1, 1, 2, 3, 1]) → true
-array123([1, 1, 2, 4, 1]) → false
-array123([1, 1, 2, 1, 2, 3]) → true
-
-*/
-
-pub fn array_123(nums: &mut [i32]) {
-
+pub fn array_123(nums: &mut [i32]) -> String{
+    return "".to_string();
 }

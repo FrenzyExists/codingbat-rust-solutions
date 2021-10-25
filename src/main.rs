@@ -33,14 +33,16 @@ use crate::warmup_1_build::end_up::end_up;
 mod warmup_2_build;
 use crate::warmup_2_build::alt_pairs::alt_pairs;
 use crate::warmup_2_build::array_667::array_667;
+use crate::warmup_2_build::last_2::last_2;
+use crate::warmup_2_build::string_x::string_x;
+use crate::warmup_2_build::array_123::array_123;
 
 /*
  *
- * use crate::warmup_2_build::double_x::double_x;
- * use crate::warmup_2_build::array_123::array_123;
+ * 
 use crate::warmup_2_build::last_2::last_2;
 use crate::warmup_2_build::array_count_9::array_count_9;
-use crate::warmup_2_build::string_x::string_x;
+
 use crate::warmup_2_build::string_yak::sting_yak;
 use crate::warmup_2_build::string_times::string_times;
 use crate::warmup_2_build::string_splosion::string_splosion;
@@ -152,7 +154,7 @@ fn warmup_1() {
     println!("front_22( string = \"a\") -> {}", front_22("a"));
     println!("front_22(strng = \"ab\") -> {}", front_22("ab"));
 
-    // every_up
+    // every_upcuz if so, 
     println!("\nTesting end_up...");
     println!("end_up(string = \"Hello\") -> {}", end_up("Hello"));
     println!("end_up(string = \"hi there\") -> {}", end_up("hi there"));
@@ -185,7 +187,7 @@ fn warmup_1() {
     
     // alt_pairs
     println!("\nTestng alt_pairs...");
-    println!("alt_pairs(string = \"kitten\") -> {}", alt_pairs("kitte"));
+    println!("alt_pairs(string = \"kitten\") -> {}", alt_pairs("kitten"));
     println!("alt_pairs(string = \"Chocolate\") -> {}", alt_pairs("Chocolate"));
     println!("alt_pairs(string = \"CodingHorror\") -> {}", alt_pairs("CodingHorror"));
 
@@ -195,8 +197,18 @@ fn warmup_1() {
     println!("arrays_667(nums = [6, 6, 2, 6]) -> {}", array_667(&mut[6,6,2,6]));
     println!("arrays_667(nums = [6, 7, 2, 6]) -> {}", array_667(&mut [6,7,2,6]));
 
-    // array_123
-    //println!("arrays_123(nums = [6, 6, 2]) -> {}", array_123(&mut [6,6,2]));
+    // last_2
+    println!("\nTestng last_2...");
+    println!("last_2(string = \"hixxhi\") -> {}", last_2("hixxhi"));
+    println!("last_2(string = \"xaxxaxaxx\") -> {}", last_2("xaxxaxaxx"));
+    println!("last_2(string = \"xaxxaxaxx\") -> {}", last_2("axxxaaxx")); 
+
+    // string_x (
+    println!("\nTestng string_x...");
+    println!("string_x(string = \"xxHxix\") -> {}", string_x("xxHxix"));
+    println!("string_x(string = \"abxxxcd\") -> {}", string_x("abxxxcd"));
+    println!("string_x(string = \"xabxxxcdx\") -> {}", string_x("xabxxxcdx")); 
+
 
     // double_x
     //println!("double_x(string = \"axxbb\") -> {}", double_x("axxbb"));

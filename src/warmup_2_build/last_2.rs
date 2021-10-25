@@ -10,5 +10,17 @@
  * last2("axxxaaxx") → 2
  *
  */
-pub fn last_2() {
+pub fn last_2(string: &str) -> i32 {
+    if string.len() <=3 {return 0;}
+    let char_vec: Vec<char> = string.chars().collect();
+    let last = char_vec.iter().skip(string.len() - 2).collect::<String>();
+    let mut temp = String::with_capacity(2);
+    let mut counter = 0;
+    for i in 0..char_vec.len() - 3 {
+        temp = (&char_vec[i..i+2]).iter().collect();
+        if last == temp {
+            counter += 1;
+        }
+    }
+    return counter;
 }
