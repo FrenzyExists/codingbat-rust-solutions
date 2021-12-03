@@ -1,5 +1,6 @@
-use std::collections::HashMap;
 use codingbat_rust::warmup1::*;
+use codingbat_rust::warmup2::*;
+use std::collections::HashMap;
 
 //==========//
 // Warmup 1 //
@@ -17,7 +18,7 @@ fn p1() {
         ("boo", "obooo"),
     ]);
     for (input, output) in &result {
-        
+        assert_eq!(back_around(input), output);
     }
 }
 
@@ -51,7 +52,9 @@ fn p4() {
         (-2, 23),
         (50, 58),
     ]);
-    for (input, output) in &result {}
+    for (input, output) in &result {
+        assert_eq!(diff_21(*input), output);
+    }
 }
 
 /// endUp
@@ -65,7 +68,9 @@ fn p5() {
         ("x", "X"),
         ("", ""),
     ]);
-    for (input, output) in &result {}
+    for (input, output) in &result {
+        assert_eq!(end_up(input), output);
+    }
 }
 
 /// Every Nth
@@ -83,7 +88,7 @@ fn p6() {
     for (input, output) in &result {
         assert_eq!(every_nth(input.0, input.1), output.to_string());
     }
-}   
+}
 
 /// front22
 #[test]
@@ -97,7 +102,9 @@ fn p7() {
         ("", ""),
         ("Logic", "LoLogicLo"),
     ]);
-    for (input, output) in &result {}
+    for (input, output) in &result {
+        assert_eq!(front_22(input), output);
+    }
 }
 
 /// front3
@@ -112,7 +119,9 @@ fn p8() {
         ("a", "aaa"),
         ("", ""),
     ]);
-    for (input, output) in &result {}
+    for (input, output) in &result {
+        assert_eq!(front_3(input), output);
+    }
 }
 
 /// frontBack
@@ -128,6 +137,9 @@ fn p9() {
         ("aavJ", "Java"),
         ("Hello", "oellH"),
     ]);
+    for (input, output) in &result {
+        assert_eq!(front_back(input), output);
+    }
 }
 
 /// hasTeen
@@ -146,6 +158,9 @@ fn p10() {
         ([4, 2, 20], false),
         ([11, 22, 22], false),
     ]);
+    for (input, output) in &result {
+        assert_eq!(has_teen(input[0], input[1], input[2]), output);
+    }
 }
 
 /// icyHot
@@ -159,6 +174,9 @@ fn p11() {
         ([-2, -2], false),
         ([120, 120], false),
     ]);
+    for (input, output) in &result {
+        assert_eq!(icy_hot(input[0], input[1]), output);
+    }
 }
 
 /// in1020
@@ -173,6 +191,9 @@ fn p12() {
         ([21, 21], false),
         ([9, 9], false),
     ]);
+    for (input, output) in &result {
+        assert_eq!(in_1020(input[0], input[1]), output);
+    }
 }
 
 /// in3050
@@ -192,9 +213,31 @@ fn p13() {
         ([35, 36], true),
         ([35, 45], false),
     ]);
+    for (input, output) in &result {
+        assert_eq!(in_3050(input[0], input[1]), output);
+    }
 }
 
 // intMax
+#[test]
+fn p14() {
+    let result = HashMap::from([
+        ([1, 2, 3], 3),
+        ([1, 3, 2], 3),
+        ([3, 2, 1], 3),
+        ([9, 3, 3], 9),
+        ([3, 9, 3], 9),
+        ([8, 2, 3], 8),
+        ([-3, -1, -2], -1),
+        ([6, 2, 5], 6),
+        ([5, 6, 2], 6),
+        ([5, 2, 6], 6),
+    ]);
+    for (input, output) in &result {
+        assert_eq!(int_max(input[0], input[1], input[2]), output);
+    }
+
+}
 
 // lastDigit
 

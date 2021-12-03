@@ -469,7 +469,7 @@ pub fn every_nth(s: &str, n: usize) -> String {
 /// hasTeen(20, 19, 10) → true
 /// hasTeen(20, 10, 13) → true
 /// ```
-pub fn has_teen() {}
+pub fn has_teen(a: i32, b: i32, c: i32) -> bool {return false;}
 
 /// Given two temperatures, return true if one is less 
 /// than 0 and the other is greater than 100.
@@ -483,7 +483,7 @@ pub fn has_teen() {}
 /// icyHot(-1, 120) → true
 /// icyHot(2, 120) → false
 /// ```
-pub fn icy_hot() {}
+pub fn icy_hot(a: i32, b: i32) -> bool {return false;}
 
 /// Given 2 int values, return true if either of them 
 /// is in the range 10..20 inclusive.
